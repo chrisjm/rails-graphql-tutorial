@@ -5,7 +5,7 @@ class GraphqlController < ApplicationController
     operation_name = params[:operationName]
     context = {
       session: session,
-      current_user: current_user,
+      current_user: current_user
     }
     result = RailsGraphqlTutorialSchema.execute(
       query,
